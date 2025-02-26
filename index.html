@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Receita de Cheesecake</title>
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .header {
+        border: 1px solid orange;
+        padding: 15px;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+        border: 1px solid orange;
+      }
+
+
+      .footer {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid orange;
+      }
+
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    
+      img {
+        float: left;
+        width: 250px;
+        height: 250px;
+      }
+
+      h1{
+        color: #dd7908;
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+      }
+    }
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div class="header">
+      <h1 id="Titulo" >Receita de Cheesecake</h1>
+    </div>
+
+    <div class="row">
+
+      <div class="col-3">
+        <h1>Ingredientes</h1>
+        <ul>
+            <li>1 pacote de biscoito maisena triturado</li>
+            <li>1/2 de manteiga sem sal derretida (o site fala margarina mas prefiro manteiga)</li>
+            <li>Canela em pó a gosto</li>
+            <li>200g de cream cheese</li>
+            <li>200g de açúcar</li>
+            <li>4 ovos</li>
+            <li>1 colher de chá de essência de baunilha</li>
+            <li>Suco de 1 Limao</li>
+            <li>200g de creme de leite</li>
+            <li>Geleia de frutas vermelhas para cobertura</li>
+            <li>Calda de chocolate</li>
+            <li>Raspas de limão</li>
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h1>Modo de Preparo</h1>
+        <ol>
+            <li>Bater o biscoito no liquidificador até obter uma farinha.</li>
+            <li>Transferir para uma tigela e acrescentar a margarina e a canela. Amassar bem com as mãos até obter uma farofa (massa quebradiça).</li>
+            <li>Untar levemente uma assadeira desmontável de aproximadamente 25 cm de diâmetro, com pinceladas de margarina.</li>
+            <li>Compacte a massa com as mãos forrando o fundo da assadeira e subindo 1 cm nas laterais.</li>
+            <li>Leve a massa para assar em forno pré-aquecido a 180ºC por 10 minutos. Retire imediatamente e deixe esfriar enquanto prepara o recheio.</li>
+            <li>Bata o cream cheese por 2 minutos na batedeira. Acrescente os outros ingredientes e bata até obter um creme homogêneo. De vez em quando interrompa e raspe o fundo com uma espátula.</li>
+            <li>Despeje sobre a massa pré-assada e asse por 20 minutos em forno pré-aquecido a 180ºC.</li>
+            <li>Retire do forno, deixe esfriar e leve para gelar. Espalhe a cobertura de sua preferência. Se for a calda de chocolate, empregue fria. Desenforme sobre um prato de bolo na hora de servir.</li>
+        </ol>
+        <p>Final da receita.</p>
+      </div>
+
+      <div class="col-3">
+        <div>
+            <img id="imagem" src="PeRes/Untitled.png" alt="Referencia">
+        </div>
+      </div>
+
+    
+
+
+    </div>
+    
+    <div class="footer">
+        <p>Fonte: <a href="https://www.tudogostoso.com.br/receita/114164-cheesecake-tradicional.html">Receita Cheesecake</a></p>
+        <button type="button" onclick='document.getElementById("Titulo").innerHTML = "SUPER FACIL !!!" '> é Dificil ?</button>
+        <button type="button" onclick='document.getElementById("Titulo").style.color = "purple"'> cor </button>
+        <button type="button" onclick="document.getElementById('imagem').style.display='none'">Esconder!</button>
+        <button type="button" onclick="document.getElementById('imagem').style.display='block'">Mostrar!</button>
+  
+
+    </div>
+
+  </body>
+      
+</html>
